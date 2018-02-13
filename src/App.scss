@@ -1,0 +1,71 @@
+@import './common/_mixins';
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100vh; 
+  align-items: center;
+  flex-direction: column;
+  background-color: #e8e8e6;
+  justify-content: center;
+}
+
+.container{
+  display: block;
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formLabel{
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #292f36;
+  letter-spacing: 2px;
+}
+
+.formInput{
+  display: block;
+  margin: 2rem 0;
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: #292f36;
+  border-bottom: 1px solid #B1B3B5;
+  outline: 0;
+  &:hover{
+    border-color: #3399ff;
+  }
+}
+
+.btn{
+  @include animation;
+  margin: 1rem 0 0 0;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  background: #3399ff;
+  cursor: pointer;
+  font-size: .8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  color: white;
+  align-self: flex-start;
+  letter-spacing: 1px;
+  &:hover{
+    opacity: .8;
+  }
+}

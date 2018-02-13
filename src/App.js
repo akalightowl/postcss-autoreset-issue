@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.scss';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className={styles.wrapper}>
+        <div className={styles.container}> 
+          <form className={styles.form}>
+            <label className={styles.formLabel} for="email">input text:</label>
+            <input className={styles.formInput} name="email" id="email" type="email" />
+            <button className={styles.btn} type="submit">submit</button>
+          </form>
+        </div>
       </div>
     );
   }
